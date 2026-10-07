@@ -13,8 +13,8 @@ const PROJECTS = [
   {
     name: { pt: "RukiWP", en: "RukiWP" },
     images: [
-      "assets/images/projetos/projeto-1-1.png",
-      "assets/images/projetos/projeto-1-2.png",
+     "projetos/projeto-1-1.png",
+      "projetos/projeto-1-2.png",
     ],
     description: {
       pt: "Projeto em desenvolvimento. Detalhes em breve.",
@@ -29,8 +29,8 @@ const PROJECTS = [
   {
     name: { pt: "Projeto 2", en: "Project 2" },
     images: [
-      "assets/images/projetos/projeto-2-1.png",
-      "assets/images/projetos/projeto-2-2.png",
+      "projetos/projeto-2-1.png",
+      "projetos/projeto-2-2.png",
     ],
     description: { pt: "Descrição ", en: "Description " },
     technologies: {
@@ -42,8 +42,8 @@ const PROJECTS = [
   {
     name: { pt: "Projeto 3", en: "Project 3" },
     images: [
-      "assets/images/projetos/projeto-3-1.png",
-      "assets/images/projetos/projeto-3-2.png",
+      "projetos/projeto-3-1.png",
+      "projetos/projeto-3-2.png",
     ],
     description: { pt: "Descrição ", en: "Description " },
     technologies: {
@@ -56,7 +56,7 @@ const PROJECTS = [
     name: { pt: "Projeto 4", en: "Project 4" },
     images: [
       "assets/images/projetos/projeto-4-1.png",
-      "assets/images/projetos/projeto-4-2.png",
+      "projetos/projeto-4-2.png",
     ],
     description: { pt: "Descrição ", en: "Description " },
     technologies: {
@@ -68,8 +68,8 @@ const PROJECTS = [
   {
     name: { pt: "Projeto 5", en: "Project 5" },
     images: [
-      "assets/images/projetos/projeto-5-1.png",
-      "assets/images/projetos/projeto-5-2.png",
+      "/projetos/projeto-5-1.png",
+      "projetos/projeto-5-2.png",
     ],
     description: { pt: "Descrição .", en: "Description ." },
     technologies: {
