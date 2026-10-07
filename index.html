@@ -1,0 +1,254 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta
+      name="description"
+      data-i18n-content="pageDescription"
+      content="Portfólio de Davi Silva, desenvolvedor web e editor de vídeo. Desenvolvimento de sites modernos, responsivos e edição de vídeo."
+    />
+
+    <title data-i18n="pageTitle">
+      Davi Silva | Desenvolvedor Web &amp; Editor de Vídeo
+    </title>
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <main>
+      <!-- CAPA / HOME -->
+      <section class="hero" id="home">
+        <!-- TOPO DA CAPA -->
+        <header class="hero-header">
+          <!-- PERFIL / LATERAL ESQUERDA -->
+          <aside class="hero-sidebar">
+            <div class="sidebar-profile">
+              <button
+                class="sidebar-profile-button"
+                type="button"
+                id="openProfilePhoto"
+                aria-label="Ampliar foto de perfil"
+                data-i18n-aria-label="openPhoto"
+              >
+                <img
+                  src="assets/images/foto-perfil.png"
+                  alt="Davi Silva"
+                  class="sidebar-profile-img"
+                />
+              </button>
+            </div>
+
+            <nav
+              id="primaryNavigation"
+              class="sidebar-nav"
+              aria-label="Navegação principal"
+              data-i18n-aria-label="navigationLabel"
+            >
+              <button
+                type="button"
+                data-hero-panel="about"
+                aria-controls="heroPanelAbout"
+                aria-pressed="false"
+                aria-expanded="false"
+                class="sidebar-nav-link"
+                data-i18n="about"
+              >
+                SOBRE MIM
+              </button>
+
+              <button
+                type="button"
+                data-hero-panel="projects"
+                aria-controls="heroPanelProjects"
+                aria-pressed="false"
+                class="sidebar-nav-link"
+                data-i18n="services"
+              >
+                SERVIÇOS
+              </button>
+
+              <button
+                type="button"
+                data-hero-panel="contact"
+                aria-controls="heroPanelContact"
+                aria-pressed="false"
+                class="sidebar-nav-link"
+                data-i18n="contact"
+              >
+                CONTATO
+              </button>
+            </nav>
+          </aside>
+
+          <!-- NOME PRINCIPAL -->
+          <div class="hero-main-name" aria-label="Davi Silva">
+            <span class="hero-name-first">DAVI</span>
+            <span class="hero-name-last">SILVA</span>
+          </div>
+          <!-- BOTÃO MENU MOBILE -->
+          <button
+            class="mobile-menu-button"
+            id="mobileMenuButton"
+            aria-controls="primaryNavigation"
+            type="button"
+            aria-label="Abrir menu"
+            aria-expanded="false"
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+
+          <!-- IDIOMAS -->
+          <div class="language-switcher">
+            <button
+              class="language-btn active"
+              type="button"
+              data-language="pt"
+              aria-pressed="true"
+              data-i18n-aria-label="selectPortuguese"
+            >
+              PT
+            </button>
+
+            <span class="language-divider">|</span>
+
+            <button
+              class="language-btn"
+              type="button"
+              data-language="en"
+              aria-pressed="false"
+              data-i18n-aria-label="selectEnglish"
+            >
+              EN
+            </button>
+          </div>
+        </header>
+
+        <!-- CONTEÚDO DINÂMICO DA CAPA -->
+        <div class="hero-details" aria-live="polite" aria-atomic="true" hidden>
+          <section
+            class="hero-panel"
+            id="heroPanelAbout"
+            aria-labelledby="heroAboutTitle"
+            tabindex="-1"
+            hidden
+          >
+            <h2 id="heroAboutTitle" data-i18n="about">SOBRE MIM</h2>
+            <p class="hero-panel-intro" data-i18n="aboutIntro">
+              Desenvolvimento web e edição de vídeo para experiências digitais
+              que se destacam.
+            </p>
+            <p class="hero-panel-text" data-i18n="heroAboutText">
+              Crio sites e vídeos combinando qualidade, criatividade e atenção
+              aos detalhes.
+            </p>
+          </section>
+          <section
+            class="hero-panel"
+            id="heroPanelProjects"
+            aria-labelledby="heroProjectsTitle"
+            tabindex="-1"
+            hidden
+          >
+            <h2 id="heroProjectsTitle" data-i18n="services">SERVIÇOS</h2>
+            <p class="hero-panel-intro" data-i18n="serviceWebTitle">
+              Desenvolvimento Web
+            </p>
+            <p class="hero-panel-text" data-i18n="serviceWebText">
+              Sites modernos, responsivos e focados em experiência.
+            </p>
+            <p class="hero-panel-intro" data-i18n="serviceVideoTitle">
+              Edição de Vídeo
+            </p>
+            <p class="hero-panel-text" data-i18n="serviceVideoText">
+              Edição com ritmo, acabamento e identidade visual.
+            </p>
+          </section>
+          <section
+            class="hero-panel"
+            id="heroPanelContact"
+            aria-labelledby="heroContactTitle"
+            tabindex="-1"
+            hidden
+          >
+            <h2 id="heroContactTitle" data-i18n="contact">CONTATO</h2>
+
+            <p class="hero-panel-intro" data-i18n="contactIntro">
+              Vamos trabalhar juntos?
+            </p>
+
+            <ul class="hero-contact-items">
+              <li>
+                <a
+                  class="hero-contact-link"
+                  href="mailto:davi.raito48@gmail.com"
+                >
+                  <span data-i18n="email">E-mail</span>
+                  <span class="hero-contact-arrow" aria-hidden="true">↗</span>
+                </a>
+              </li>
+
+              <li>
+                <a
+                  class="hero-contact-link"
+                  href="https://github.com/daviraito48-web"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <span>GitHub</span>
+                  <span class="hero-contact-arrow" aria-hidden="true">↗</span>
+                </a>
+              </li>
+            </ul>
+          </section>
+        </div>
+        <!-- ÁREA PRINCIPAL DA CAPA -->
+        <div class="hero-content">
+          <!-- PROJETOS / CARROSSEL 3D -->
+          <div class="hero-projects">
+            <div class="projects-carousel" id="projectsCarousel">
+              <div class="projects-ring" id="projectsRing"></div>
+            </div>
+          </div>
+        </div>
+        <!-- FOTO DA CAPA -->
+        <div class="hero-photo">
+          <img
+            src="assets/images/perfil.png"
+            alt="Foto profissional"
+            data-i18n-alt="professionalPhoto"
+            class="hero-photo-img"
+          />
+        </div>
+      </section>
+
+      <!-- FOTO DE PERFIL AMPLIADA -->
+      <div class="profile-modal" id="profileModal" aria-hidden="true">
+        <div class="profile-modal-content">
+          <button
+            class="profile-modal-close"
+            id="closeProfilePhoto"
+            type="button"
+            aria-label="Fechar foto"
+            data-i18n-aria-label="closePhoto"
+          >
+            ×
+          </button>
+
+          <img
+            src="assets/images/perfil.png"
+            alt="Davi Silva"
+            class="profile-modal-img"
+          />
+        </div>
+      </div>
+    </main>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
